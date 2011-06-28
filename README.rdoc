@@ -1,0 +1,3 @@
+see http://www.eigenspace.org/2011/06/microsoft-outlook-growl-notifications/ for details and install instructions
+
+If you want to compile the scripts yourself, clone this repo and run ./build.sh to create compiled versions
