@@ -1,4 +1,5 @@
-ster Outlook with Growl' for Microsoft Outlook 2011 Mac
+(*
+Register Outlook with Growl' for Microsoft Outlook 2011 Mac
 By Erik Gustavson (http://eigenspace.org)
 
 Based on the script by Matt Legend Gemmell ( http://mattgemmell.com/ or @mattgemmell on Twitter). Original at http://mattgemmell.com/using-growl-with-microsoft-outlook
@@ -21,8 +22,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 tell application "GrowlHelperApp"
 	set the allNotificationsList to {"New Mail"}
 	set the enabledNotificationsList to {"New Mail"}
-	register as application ¬
-		"Outlook" all notifications allNotificationsList ¬
-		default notifications enabledNotificationsList ¬
-		icon of application "Microsoft Outlook"
+	register as application "Outlook" all notifications allNotificationsList default notifications enabledNotificationsList icon of application "Microsoft Outlook"
 end tell
