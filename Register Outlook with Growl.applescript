@@ -19,8 +19,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 *)
 
 -- Register a notification type called "New Mail" with Growl, and enable it.
-tell application "GrowlHelperApp"
+tell application "Growl"
 	set the allNotificationsList to {"New Mail"}
 	set the enabledNotificationsList to {"New Mail"}
 	register as application "Outlook" all notifications allNotificationsList default notifications enabledNotificationsList icon of application "Microsoft Outlook"
 end tell
+
