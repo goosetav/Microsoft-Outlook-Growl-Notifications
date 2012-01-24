@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 -- don't try to growl if growl is not running (see http://growl.info/documentation/applescript-support.php)
 tell application "System Events"
-	set isRunning to (count of (every process whose name is "GrowlHelperApp")) > 0
+	set isRunning to (count of (every process whose name is "Growl")) > 0
 end tell
 
 if isRunning is true then
