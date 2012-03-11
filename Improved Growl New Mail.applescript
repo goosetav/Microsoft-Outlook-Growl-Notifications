@@ -69,9 +69,11 @@ if isRunning is true then
 				end try
 				
 				-- growl it!
+				ignoring application responses
 				tell application "Growl"
 					notify with name "New Mail" title mysender description (mysubject & " - " & mycontent) application name "Outlook"
 				end tell
+				end ignoring
 			end if
 			
 		end repeat
